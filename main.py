@@ -7,7 +7,7 @@ def main():
     frequencies = compute_word_frequency_from_file(text)
     for i in frequencies.items():
         print(i)
-    print(frequencies)
+    # print(frequencies)
 
     square = Square(4)
     print(square.area())
