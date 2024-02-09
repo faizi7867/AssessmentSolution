@@ -7,8 +7,9 @@ def compute_word_frequency(text):
             d[i] = 1
         else:
             d[i] += 1
-    return dict(sorted(d.items()))
-
+    sorted_data = dict(sorted(d.items()))
+    for i in sorted_data.items():
+        print(i)
 
 def compute_word_frequency_from_file(file_path):
     with open(file_path, 'r') as file:
